@@ -1,13 +1,44 @@
-import { Box } from "@mui/material";
-import React from "react";
+import { Box, Container, Stack } from "@mui/material";
 
 import bgSobre from "../../assets/img/home/learning_img.png";
 import bgAdvance from "../../assets/img/home/advance_feature_img.png";
+import imgGil from "../../assets/img/home/gil_bayana.jpg";
+import bannerHome from "../../assets/banner_img.png";
+
+import "./inicio.css";
 
 const Inicio = () => {
   return (
-    <Box>
-      <section className="banner_part">
+    <Box component="main">
+      <Box component="form">
+        <Container sx={{ display: "flex" }} maxWidth="lg">
+          <Box sx={{ display: "flex", flexDirection: "column", width: "50%" }}>
+            <h5>Empoderamento digital e visibilidade</h5>
+            <h1>
+              Aliando tecnologia à cultura, conectamos projetos do campo ao
+              mundo virtual
+            </h1>
+            <p>
+              Vamos dar visibilidade e ecoar projetos socioculturais que atuem
+              no campo, em zonas rurais, áreas afastadas do centro urbano e
+              tecnológico. Criar pontes para facilitar o acesso à educação, à
+              dignidade humana, o empoderamento digital.
+            </p>
+            <Stack margin={2} direction="row" spacing={2}>
+              <a href="/blog" className="btn_1">
+                Saiba Mais
+              </a>
+              <a href="projects.html" className="btn_2">
+                Projetos
+              </a>
+            </Stack>
+          </Box>
+          <Box sx={{ width: "50%" }}>
+            <img src={bannerHome} alt="BannerHome" />
+          </Box>
+        </Container>
+      </Box>
+      {/* <section className="banner_part">
         <div className="container">
           <div className="row align-items-center">
             <div className="col-lg-6 col-xl-6">
@@ -35,7 +66,7 @@ const Inicio = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       <section className="feature_part">
         <div className="container">
@@ -386,11 +417,7 @@ const Inicio = () => {
             <div className="col-sm-6 col-lg-4 col-xl-4">
               <div className="single-home-blog">
                 <div className="card">
-                  <img
-                    src="img/home/gil_bayana.jpg"
-                    className="card-img-top"
-                    alt="blog"
-                  />
+                  <img src={imgGil} className="card-img-top" alt="blog" />
                   <div className="card-body">
                     <p className="btn_4">Música</p>
                     <a href="artigos/artigo001.html">
