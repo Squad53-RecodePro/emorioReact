@@ -2,8 +2,16 @@ import { Box, Container, Stack } from "@mui/material";
 
 import bgSobre from "../../assets/img/home/learning_img.png";
 import bgAdvance from "../../assets/img/home/advance_feature_img.png";
-import imgGil from "../../assets/img/home/gil_bayana.jpg";
+import imgGil from "../../assets/img/blog/gil_bayana.jpg";
+import voNeto from "../../assets/img/blog/grandmother-1822564_1280.jpg";
+import meninoViolao from "../../assets/img/blog/menino-violao.jpg";
 import bannerHome from "../../assets/banner_img.png";
+import parceria2 from "../../assets/img/team/Eric.jpeg"
+import parceria3 from "../../assets/img/team/Alessandra.jpg"
+import parceria1 from "../../assets/img/team/Tatiane.jpeg"
+import parceria6 from "../../assets/img/team/Gabriela.jpeg"
+import parceria10 from "../../assets/img/team/MarianaAlmeida.jpg"
+import parceria5 from "../../assets/img/team/Mariana.jpeg"
 
 import "./inicio.css";
 
@@ -283,7 +291,7 @@ const Inicio = () => {
                     </div>
                     <div className="col-lg-4 col-xl-2 col-sm-4">
                       <div className="testimonial_slider_img">
-                        <img src="img\about\Alessandra.jpg" alt="Alessandra" />
+                        <img src={parceria3} alt="Alessandra" />
                       </div>
                     </div>
                     <div className="col-xl-4 d-none d-xl-block">
@@ -303,7 +311,7 @@ const Inicio = () => {
                     </div>
                     <div className="col-xl-2 d-none d-xl-block">
                       <div className="testimonial_slider_img">
-                        <img src="img\about\Tatiane.jpeg" alt="#" />
+                        <img src={parceria1} alt="Tatiane Fernandes" />
                       </div>
                     </div>
                   </div>
@@ -325,7 +333,7 @@ const Inicio = () => {
                     </div>
                     <div className="col-lg-4 col-xl-2 col-sm-4">
                       <div className="testimonial_slider_img">
-                        <img src="img\about\Eric.jpeg" alt="#" />
+                        <img src={parceria2} alt="#" />
                       </div>
                     </div>
                     <div className="col-xl-4 d-none d-xl-block">
@@ -345,7 +353,7 @@ const Inicio = () => {
                     </div>
                     <div className="col-xl-2 d-none d-xl-block">
                       <div className="testimonial_slider_img">
-                        <img src="img\about\Gabriela.jpeg" alt="#" />
+                        <img src={parceria6} alt="Gabriela Amorim" />
                       </div>
                     </div>
                   </div>
@@ -371,7 +379,7 @@ const Inicio = () => {
                     </div>
                     <div className="col-lg-4 col-xl-2 col-sm-4">
                       <div className="testimonial_slider_img">
-                        <img src="img\about\MarianaAlmeida.jpg" alt="#" />
+                        <img src={parceria10} alt="Mariana Almeida" />
                       </div>
                     </div>
                     <div className="col-xl-4 d-none d-xl-block">
@@ -391,8 +399,8 @@ const Inicio = () => {
                       </div>
                     </div>
                     <div className="col-xl-2 d-none d-xl-block">
-                      <div className="testimonial_slider_img">
-                        <img src="img\about\Mariana.jpeg" alt="#" />
+                      <div className={parceria5}>
+                        <img src="img\about\Mariana.jpeg" alt="Mariana Zancanaro" />
                       </div>
                     </div>
                   </div>
@@ -447,7 +455,7 @@ const Inicio = () => {
               <div className="single-home-blog">
                 <div className="card">
                   <img
-                    src="img/imgs/grandmother-1822564_1280.jpg"
+                    src={voNeto}
                     className="card-img-top"
                     alt="blog"
                   />
@@ -480,7 +488,7 @@ const Inicio = () => {
               <div className="single-home-blog">
                 <div className="card">
                   <img
-                    src="img/blog/criancaRural.jpg"
+                    src={meninoViolao}  
                     className="card-img-top"
                     alt="blog"
                   />
