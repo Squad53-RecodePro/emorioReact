@@ -1,9 +1,9 @@
 import { Box, Container, Stack } from "@mui/material";
 
-import bgSobre from "../../assets/img/home/learning_img.png";
+import bannerHome from "../../assets/banner_img.png";
 import bgAdvance from "../../assets/img/home/advance_feature_img.png";
 import imgGil from "../../assets/img/home/gil_bayana.jpg";
-import bannerHome from "../../assets/banner_img.png";
+import bgSobre from "../../assets/img/home/learning_img.png";
 
 import "./inicio.css";
 
@@ -82,7 +82,7 @@ const Inicio = () => {
                   precisa ser feita. A educação, como prevê a nossa
                   Constituição, é um direito de todos.
                 </p>
-                <a href="#" className="btn_1">
+                <a href="/blog" className="btn_1">
                   Saiba Mais
                 </a>
               </div>
@@ -163,7 +163,7 @@ const Inicio = () => {
                     disponibilizados por nossos parceiros
                   </li>
                 </ul>
-                <a href="#" className="btn_1">
+                <a href="/sobre" className="btn_1">
                   Consulte Mais Informação
                 </a>
               </div>
