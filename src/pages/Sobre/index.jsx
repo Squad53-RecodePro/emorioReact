@@ -1,5 +1,10 @@
 import React from "react";
 
+import imgMissao from "../../assets/img/about/missao.jpg"
+import imgVisao from "../../assets/img/about/visao.jpg"
+import imgValores from "../../assets/img/about/valores.jpg"
+import imgDoacao from "../../assets/img/about/doacao.jpg"
+
 const Sobre = () => {
   return (
     <div>
@@ -42,7 +47,7 @@ const Sobre = () => {
           </p>
         </div>
         <div class="col-md-5">
-          <img src="img/about/missao.jpg" alt="Imagem Missão" />
+          <img src={imgMissao} alt="Imagem Missão" /> 
         </div>
       </div>
 
@@ -63,7 +68,7 @@ const Sobre = () => {
           </p>
         </div>
         <div class="col-md-5 order-md-1">
-          <img src="img/about/visao.jpg" alt="Imagem Visão" />
+          <img src={imgVisao} alt="Imagem Visão" />
         </div>
       </div>
 
@@ -82,7 +87,7 @@ const Sobre = () => {
           </p>
         </div>
         <div class="col-md-5">
-          <img src="img/about/valores.jpg" alt="Imagem Valores" />
+          <img src={imgValores} alt="Imagem Valores" />
         </div>
       </div>
 
@@ -170,7 +175,7 @@ const Sobre = () => {
           <div class="row align-items-sm-center align-items-lg-stretch">
             <div class="col-md-7 col-lg-7">
               <div class="learning_img">
-                <img src="img/about/doacao.jpg" alt="Doações" />
+                <img src={imgDoacao} alt="Doações" />
               </div>
             </div>
             <div class="col-md-5 col-lg-5">

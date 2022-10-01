@@ -1,5 +1,13 @@
 import React from "react";
 
+import primeiroPitch from "../../assets/img/blog/artigo7.png"
+import arteSustentabilidade from "../../assets/img/blog/artesustentabilidade4.jpeg"
+import imgGil from "../../assets/img/blog/gil_bayana.jpg"
+import meninoViolao from "../../assets/img/blog/menino-violao.jpg"
+import criancaRural from "../../assets/img/blog/criancaRural.jpg"
+import estudoTech from "../../assets/img/blog/business.jpg"
+import voNeto from "../../assets/img/blog/grandmother-1822564_1280.jpg"
+
 const Blog = () => {
   return (
     <div>
@@ -28,8 +36,8 @@ const Blog = () => {
                 <article class="blog_item">
                   <div class="blog_item_img">
                     <img
-                      class="card-img rounded-0"
-                      src="img\blog\artigo7.png"
+                      class="card-img rounded-0" 
+                      src={primeiroPitch} 
                       alt="Pitch Emorio"
                     />
                     <a href="#" class="blog_item_date">
@@ -67,7 +75,7 @@ const Blog = () => {
                   <div class="blog_item_img">
                     <img
                       class="card-img rounded-0"
-                      src="img/imgs\artesustentabilidade4.jpeg"
+                      src={arteSustentabilidade} 
                       alt="capaArteeSustentabilidade"
                     />
                     <a href="#" class="blog_item_date">
@@ -114,7 +122,7 @@ const Blog = () => {
                   <div class="blog_item_img">
                     <img
                       class="card-img rounded-0"
-                      src="img/home/gil_bayana.jpg"
+                      src={imgGil} 
                       alt="gil_bayana"
                     />
                     <a href="#" class="blog_item_date">
@@ -166,7 +174,7 @@ const Blog = () => {
                   <div class="blog_item_img">
                     <img
                       class="card-img rounded-0"
-                      src="img/imgs/guitar-435094_1280.jpg"
+                      src={meninoViolao} 
                       alt=""
                     />
                     <a href="#" class="blog_item_date">
@@ -208,7 +216,7 @@ const Blog = () => {
                   <div class="blog_item_img">
                     <img
                       class="card-img rounded-0"
-                      src="img/blog/criancaRural.jpg"
+                      src={criancaRural}  
                       alt="bg"
                     />
                     <a href="#" class="blog_item_date">
@@ -253,7 +261,7 @@ const Blog = () => {
                   <div class="blog_item_img">
                     <img
                       class="card-img rounded-0"
-                      src="img/imgs/business-2846221_1280.jpg"
+                      src={estudoTech} 
                       alt=""
                     />
                     <a href="#" class="blog_item_date">
@@ -299,7 +307,7 @@ const Blog = () => {
                   <div class="blog_item_img">
                     <img
                       class="card-img rounded-0"
-                      src="img/imgs/grandmother-1822564_1280.jpg"
+                      src={voNeto} 
                       alt="fundoimg"
                     />
                     <a href="#" class="blog_item_date">
@@ -440,7 +448,7 @@ const Blog = () => {
                 <aside class="single_sidebar_widget popular_post_widget">
                   <h3 class="widget_title">Artigos Recentes</h3>
                   <div class="media post_item">
-                    <img src="img/post/post_1.png" alt="post" />
+                    <img src="img/post/post_1.png" alt="post" /> 
                     <div class="media-body">
                       <a href="single-blog.html">
                         <h3>From life was you fish...</h3>

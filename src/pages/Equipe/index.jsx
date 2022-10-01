@@ -1,6 +1,33 @@
 import { Box } from "@mui/material";
 import React from "react";
 
+import felipeMorales from "../../assets/img/team/team-1.jpeg"
+import gabrielaGodoi from "../../assets/img/team/team-2.jpeg"
+import luanaBelmiro from "../../assets/img/team/team-3.jpeg"
+import marcelleOliveira from "../../assets/img/team/team-4.jpeg"
+import nicolasBraga from "../../assets/img/team/team-5.jpg"
+import polianaYukie from "../../assets/img/team/team-6.jpeg"
+import parceria1 from "../../assets/img/team/Tatiane.jpeg"
+import parceria2 from "../../assets/img/team/Eric.jpeg"
+import parceria3 from "../../assets/img/team/Alessandra.jpg"
+import parceria4 from "../../assets/img/team/Luiza.jpeg"
+import parceria5 from "../../assets/img/team/Mariana.jpeg"
+import parceria6 from "../../assets/img/team/Gabriela.jpeg"
+import parceria7 from "../../assets/img/team/Diego.jpeg"
+import parceria8 from "../../assets/img/team/RenanFrancisco.jpeg"
+import parceria9 from "../../assets/img/team/Andreia.jpeg"
+import parceria10 from "../../assets/img/team/MarianaAlmeida.jpg"
+import parceria11 from "../../assets/img/team/Juliana.jpeg"
+import parceria12 from "../../assets/img/team/Thais.jpeg"
+import parceria13 from "../../assets/img/team/Cassia.jpeg"
+import parceria14 from "../../assets/img/team/Bianca.jpeg"
+import parceria15 from "../../assets/img/team/MariaCarolina.jpeg"
+import parceria16 from "../../assets/img/team/MariaClara.jpeg"
+import parceria17 from "../../assets/img/team/LucasLima.jpeg"
+import parceria18 from "../../assets/img/team/FilipeDavi.jpeg"
+import parceria19 from "../../assets/img/team/Beethoven.jpg"
+import parceria20 from "../../assets/img/team/Gustavo.jpeg"
+
 const Equipe = () => {
   return (
     <Box>
@@ -43,8 +70,8 @@ const Equipe = () => {
                       >
                         <img
                           class="img-fluid w-100"
-                          src="img/team-1.jpeg"
-                          alt=""
+                          src={felipeMorales}
+                          alt="Felipe Morales"
                         />
                         <div class="team-social d-flex align-items-center justify-content-center w-100 h-100 position-absolute">
                           <a
@@ -77,11 +104,14 @@ const Equipe = () => {
                       <i>Desenvolvedor Backend - Gestor de Projetos</i>
                     </div>
                     <div class="col-md-6 col-lg-4 text-center team mb-5">
-                      <div class="position-relative overflow-hidden mb-4">
+                      <div 
+                      style={{ borderRadius: "100%" }}
+                      class="position-relative overflow-hidden mb-4"
+                      >
                         <img
                           class="img-fluid w-100"
-                          src="img/team-6.jpeg"
-                          alt="Gabriela"
+                          src={gabrielaGodoi}
+                          alt="Gabriela Godoi"
                         />
                         <div class="team-social d-flex align-items-center justify-content-center w-100 h-100 position-absolute">
                           <a
@@ -115,11 +145,14 @@ const Equipe = () => {
                       <i>Desenvolvedora Full Stack</i>
                     </div>
                     <div class="col-md-6 col-lg-4 text-center team mb-5">
-                      <div class="position-relative overflow-hidden mb-4">
+                      <div
+                        style={{ borderRadius: "100%" }}
+                        class="position-relative overflow-hidden mb-4"
+                      >
                         <img
                           class="img-fluid w-100"
-                          src="img/team-4.jpeg"
-                          alt=""
+                          src={luanaBelmiro}
+                          alt="Luana Belmiro"
                         />
                         <div class="team-social d-flex align-items-center justify-content-center w-100 h-100 position-absolute">
                           <a
@@ -145,13 +178,13 @@ const Equipe = () => {
                     </div>
                     <div class="col-md-6 col-lg-4 text-center team mb-5">
                       <div
+                        style={{ borderRadius: "100%" }}
                         class="position-relative overflow-hidden mb-4"
-                        rel="noreferrer"
                       >
                         <img
                           class="img-fluid w-100"
-                          src="img/team-5.jpeg"
-                          alt=""
+                          src={marcelleOliveira}
+                          alt="Marcelle de Oliveira"
                         />
                         <div class="team-social d-flex align-items-center justify-content-center w-100 h-100 position-absolute">
                           <a
@@ -172,15 +205,18 @@ const Equipe = () => {
                           </a>
                         </div>
                       </div>
-                      <h4>Marcele De Oliveira</h4>
+                      <h4>Marcelle De Oliveira</h4>
                       <i>Desenvolvedora Frontend</i>
                     </div>
                     <div class="col-md-6 col-lg-4 text-center team mb-5">
-                      <div class="position-relative overflow-hidden mb-4">
+                      <div
+                        style={{ borderRadius: "100%" }}
+                        class="position-relative overflow-hidden mb-4"
+                      >
                         <img
                           class="img-fluid w-100"
-                          src="img/team-2.jpg"
-                          alt=""
+                          src={nicolasBraga}
+                          alt="Nicolas Braga"
                         />
                         <div class="team-social d-flex align-items-center justify-content-center w-100 h-100 position-absolute">
                           <a
@@ -213,11 +249,14 @@ const Equipe = () => {
                       <i>Desenvolvedor Full Stack</i>
                     </div>
                     <div class="col-md-6 col-lg-4 text-center team mb-5">
-                      <div class="position-relative overflow-hidden mb-4">
+                      <div
+                        style={{ borderRadius: "100%" }}
+                        class="position-relative overflow-hidden mb-4"
+                      >
                         <img
                           class="img-fluid w-100"
-                          src="img/team-3.jpeg"
-                          alt=""
+                          src={polianaYukie}
+                          alt="Poliana Yukie"
                         />
                         <div class="team-social d-flex align-items-center justify-content-center w-100 h-100 position-absolute">
                           <a
@@ -270,19 +309,19 @@ const Equipe = () => {
         <div class="containerCard">
           <div class="box">
             <div class="imgBox">
-              <img src="img/about/Tatiane.jpeg" alt="Maria Clara" />
+              <img src={parceria1} alt="Maria Clara" />
             </div>
             <div class="content">
               <h2>
-                Tatiane Fernandes
-                <span>Engenheira de Produção Cultural</span>
+                Tatiane Fernandes 
+              <p><span>Engenheira de Produção Cultural</span></p>
               </h2>
             </div>
           </div>
 
           <div class="box">
             <div class="imgBox">
-              <img src="img/about/Eric.jpeg" alt="Maria Carolina" />
+              <img src={parceria2}t="Maria Carolina" />
             </div>
             <div class="content">
               <h2>
@@ -294,7 +333,7 @@ const Equipe = () => {
 
           <div class="box">
             <div class="imgBox">
-              <img src="img/about/Alessandra.jpg" alt="Mariana" />
+              <img src={parceria3} alt="Mariana" />
             </div>
             <div class="content">
               <h2>
@@ -306,7 +345,7 @@ const Equipe = () => {
 
           <div class="box">
             <div class="imgBox">
-              <img src="img/about/Luiza.jpeg" alt="Mariana" />
+              <img src={parceria4} alt="Mariana" />
             </div>
             <div class="content">
               <h2>
@@ -318,7 +357,7 @@ const Equipe = () => {
 
           <div class="box">
             <div class="imgBox">
-              <img src="img/about/Mariana.jpeg" alt="Mariana" />
+              <img src={parceria5} alt="Mariana" />
             </div>
             <div class="content">
               <h2>
@@ -330,7 +369,7 @@ const Equipe = () => {
 
           <div class="box">
             <div class="imgBox">
-              <img src="img/about/Gabriela.jpeg" alt="Mariana" />
+              <img src={parceria6} alt="Mariana" />
             </div>
             <div class="content">
               <h2>
@@ -342,7 +381,7 @@ const Equipe = () => {
 
           <div class="box">
             <div class="imgBox">
-              <img src="img/about/Diego.jpeg" alt="Mariana" />
+              <img src={parceria7}lt="Mariana" />
             </div>
             <div class="content">
               <h2>
@@ -354,7 +393,7 @@ const Equipe = () => {
 
           <div class="box">
             <div class="imgBox">
-              <img src="img/about/RenanFrancisco.jpeg" alt="Mariana" />
+              <img src={parceria8} alt="Mariana" />
             </div>
             <div class="content">
               <h2>
@@ -366,7 +405,7 @@ const Equipe = () => {
 
           <div class="box">
             <div class="imgBox">
-              <img src="img/about/Andreia.jpeg" alt="Andreia" />
+              <img src={parceria9} alt="Andreia" />
             </div>
             <div class="content">
               <h2>
@@ -380,7 +419,7 @@ const Equipe = () => {
 
           <div class="box">
             <div class="imgBox">
-              <img src="img/about/MarianaAlmeida.jpg" alt="Mariana" />
+              <img src={parceria10} alt="Mariana" />
             </div>
             <div class="content">
               <h2>
@@ -392,7 +431,7 @@ const Equipe = () => {
 
           <div class="box">
             <div class="imgBox">
-              <img src="img/about/Juliana.jpeg" alt="Mariana" />
+              <img src={parceria11} alt="Mariana" />
             </div>
             <div class="content">
               <h2>
@@ -404,7 +443,7 @@ const Equipe = () => {
 
           <div class="box">
             <div class="imgBox">
-              <img src="img/about/Thais.jpeg" alt="Mariana" />
+              <img src={parceria12} alt="Mariana" />
             </div>
             <div class="content">
               <h2>
@@ -416,7 +455,7 @@ const Equipe = () => {
 
           <div class="box">
             <div class="imgBox">
-              <img src="img/about/Cassia.jpeg" alt="Mariana" />
+              <img src={parceria13} alt="Mariana" />
             </div>
             <div class="content">
               <h2>
@@ -428,7 +467,7 @@ const Equipe = () => {
 
           <div class="box">
             <div class="imgBox">
-              <img src="img/about/Bianca.jpeg" alt="Mariana" />
+              <img src={parceria14} alt="Mariana" />
             </div>
             <div class="content">
               <h2>
@@ -440,7 +479,7 @@ const Equipe = () => {
 
           <div class="box">
             <div class="imgBox">
-              <img src="img/about/MariaCarolina.jpeg" alt="Mariana" />
+              <img src={parceria15} alt="Mariana" />
             </div>
             <div class="content">
               <h2>
@@ -452,7 +491,7 @@ const Equipe = () => {
 
           <div class="box">
             <div class="imgBox">
-              <img src="img/about/mariaClara.jpeg" alt="Mariana" />
+              <img src={parceria16}e alt="Mariana" />
             </div>
             <div class="content">
               <h2>
@@ -464,7 +503,7 @@ const Equipe = () => {
 
           <div class="box">
             <div class="imgBox">
-              <img src="img\about\LucasLima.jpeg" alt="Lucas Lima" />
+              <img src={parceria17} alt="Lucas Lima" />
             </div>
             <div class="content">
               <h2>
@@ -476,7 +515,7 @@ const Equipe = () => {
 
           <div class="box">
             <div class="imgBox">
-              <img src="img\about\FilipeDavi.jpeg" alt="Filipe Davi" />
+              <img src={parceria18} alt="Filipe Davi" />
             </div>
             <div class="content">
               <h2>
@@ -488,7 +527,7 @@ const Equipe = () => {
 
           <div class="box">
             <div class="imgBox">
-              <img src="img/about/Beethoven.jpg" alt="Beethoven Lima" />
+              <img src={parceria19} alt="Beethoven Lima" />
             </div>
             <div class="content">
               <h2>
@@ -500,7 +539,7 @@ const Equipe = () => {
 
           <div class="box">
             <div class="imgBox">
-              <img src="img/about/Gustavo.jpeg" alt="Gustavo Melo" />
+              <img src={parceria20} alt="Gustavo Melo" />
             </div>
             <div class="content">
               <h2>
