@@ -1,79 +1,71 @@
-import { Box, Container, Stack } from "@mui/material";
+import { Box, Container, Paper, Stack, Typography } from "@mui/material";
 
 import bannerHome from "../../assets/banner_img.png";
-import bgAdvance from "../../assets/img/home/advance_feature_img.png";
 import imgGil from "../../assets/img/blog/gil_bayana.jpg";
 import voNeto from "../../assets/img/blog/grandmother-1822564_1280.jpg";
 import meninoViolao from "../../assets/img/blog/menino-violao.jpg";
-import parceria2 from "../../assets/img/team/Eric.jpeg";
-import parceria3 from "../../assets/img/team/Alessandra.jpg";
-import parceria1 from "../../assets/img/team/Tatiane.jpeg";
-import parceria6 from "../../assets/img/team/Gabriela.jpeg";
-import parceria10 from "../../assets/img/team/MarianaAlmeida.jpg";
-import parceria5 from "../../assets/img/team/Mariana.jpeg";
+import bgAdvance from "../../assets/img/home/advance_feature_img.png";
+import bannerSobre from "../../assets/img/home/learning_img.png";
+import aspas from "../../assets/img/icon/quate.svg";
+import bgBannerHome from "../../assets/backgrounds/banner_bg.png";
+
+import { participantes } from "../../utils/listaParticipantes";
 
 import "./inicio.css";
 
 const Inicio = () => {
   return (
     <Box component="main">
-      <Box component="form">
-        <Container sx={{ display: "flex" }} maxWidth="lg">
-          <Box sx={{ display: "flex", flexDirection: "column", width: "50%" }}>
-            <h5>Empoderamento digital e visibilidade</h5>
-            <h1>
-              Aliando tecnologia à cultura, conectamos projetos do campo ao
-              mundo virtual
-            </h1>
-            <p>
-              Vamos dar visibilidade e ecoar projetos socioculturais que atuem
-              no campo, em zonas rurais, áreas afastadas do centro urbano e
-              tecnológico. Criar pontes para facilitar o acesso à educação, à
-              dignidade humana, o empoderamento digital.
-            </p>
-            <Stack margin={2} direction="row" spacing={2}>
-              <a href="/blog" className="btn_1">
-                Saiba Mais
-              </a>
-              <a href="projects.html" className="btn_2">
-                Projetos
-              </a>
-            </Stack>
-          </Box>
-          <Box sx={{ width: "50%" }}>
-            <img src={bannerHome} alt="BannerHome" />
-          </Box>
-        </Container>
+      <Box
+        sx={{
+          display: "flex",
+          backgroundImage: `url(${bgBannerHome})`,
+          backgroundPosition: "top",
+          backgroundRepeat: "no-repeat",
+          backgroundSize: "cover",
+          width: "100%",
+        }}
+      >
+        <Box
+          sx={{
+            display: "flex",
+            flexDirection: "column",
+            width: "50%",
+            pt: 10,
+            pl: 10,
+          }}
+        >
+          <h5 className="text-uppercase">
+            Empoderamento digital e visibilidade
+          </h5>
+          <h1 className="display-4 font-weight-bold">
+            Aliando tecnologia à cultura, conectamos projetos do campo ao mundo
+            virtual
+          </h1>
+          <p>
+            Vamos dar visibilidade e ecoar projetos socioculturais que atuem no
+            campo, em zonas rurais, áreas afastadas do centro urbano e
+            tecnológico. Criar pontes para facilitar o acesso à educação, à
+            dignidade humana, o empoderamento digital.
+          </p>
+          <Stack mt={5} direction="row" spacing={2}>
+            <a href="/blog" className="btn_1">
+              Saiba Mais
+            </a>
+            <a href="projects.html" className="btn_2">
+              Projetos
+            </a>
+          </Stack>
+        </Box>
+        <Box
+          sx={{
+            pt: 5,
+            width: "50%",
+          }}
+        >
+          <img src={bannerHome} alt="BannerHome" />
+        </Box>
       </Box>
-      {/* <section className="banner_part">
-        <div className="container">
-          <div className="row align-items-center">
-            <div className="col-lg-6 col-xl-6">
-              <div className="banner_text">
-                <div className="banner_text_iner">
-                  <h5>Empoderamento digital e visibilidade</h5>
-                  <h1>
-                    Aliando tecnologia à cultura, conectamos projetos do campo
-                    ao mundo virtual
-                  </h1>
-                  <p>
-                    Vamos dar visibilidade e ecoar projetos socioculturais que
-                    atuem no campo, em zonas rurais, áreas afastadas do centro
-                    urbano e tecnológico. Criar pontes para facilitar o acesso à
-                    educação, à dignidade humana, o empoderamento digital.
-                  </p>
-                  <a href="/blog" className="btn_1">
-                    Saiba Mais
-                  </a>
-                  <a href="projects.html" className="btn_2">
-                    Projetos
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section> */}
 
       <section className="feature_part">
         <div className="container">
@@ -148,7 +140,7 @@ const Inicio = () => {
           <div className="row align-items-sm-center align-items-lg-stretch">
             <div className="col-md-7 col-lg-7">
               <div className="learning_img">
-                {/*     <img src={bgSobre} alt="IlustraçãoSobre" /> */}
+                <img src={bannerSobre} alt="IlustraçãoSobre" />
               </div>
             </div>
             <div className="col-md-5 col-lg-5">
@@ -269,150 +261,50 @@ const Inicio = () => {
               </div>
             </div>
           </div>
-          <div className="row">
-            <div className="col-lg-12">
-              <div className="textimonial_iner owl-carousel">
-                <div className="testimonial_slider">
-                  <div className="row">
-                    <div className="col-lg-8 col-xl-4 col-sm-8 align-self-center">
-                      <div className="testimonial_slider_text">
-                        <p>
-                          Psicóloga formada pela PUC-SP, com especialização em
-                          Saúde Materno-Infantil pela UNIFESP. Tem experiência
-                          com atendimento de gestantes e puérperas e questões
-                          relacionadas a parentalidade. Trabalha a partir da
-                          Fenomenologia-Existencial Crítica e atualmente tenho
-                          como foco o público feminino, negro e lgbtqia+.
-                        </p>
-                        <h4>Alessandra Marques</h4>
-                        <h5>Psicóloga e Graduanda em Pedagogia</h5>
-                      </div>
-                    </div>
-                    <div className="col-lg-4 col-xl-2 col-sm-4">
-                      <div className="testimonial_slider_img">
-                        <img src={parceria3} alt="Alessandra" />
-                      </div>
-                    </div>
-                    <div className="col-xl-4 d-none d-xl-block">
-                      <div className="testimonial_slider_text">
-                        <p>
-                          Tatiane Fernandes é Engenheira de Produção Cultural.
-                          Membro Fundadora do Forum Potiguar de Cultura, atua na
-                          produção através de sua produtora a Mapa Realizações
-                          Culturais, passou pela experiência de membro do
-                          Conselho Municipal de Políticas Culturais de Natal e
-                          foi gestora técnica na Fundação José Augusto por 2
-                          anos.
-                        </p>
-                        <h4>Tatiane Fernandes</h4>
-                        <h5>Engenheira de Produção Cultural</h5>
-                      </div>
-                    </div>
-                    <div className="col-xl-2 d-none d-xl-block">
-                      <div className="testimonial_slider_img">
-                        <img src={parceria1} alt="Tatiane Fernandes" />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="testimonial_slider">
-                  <div className="row">
-                    <div className="col-lg-8 col-xl-4 col-sm-8 align-self-center">
-                      <div className="testimonial_slider_text">
-                        <p>
-                          Eric Max, é um ator, artevista, produtor, artista
-                          visual, diretor cinematográfico e performer,
-                          amazonense. Estudante de Licenciatura em Teatro pela
-                          UFBA, fundador da Org. Cura Amazônica e Borboleta Azul
-                          Filmes.
-                        </p>
-                        <h4>Eric Max</h4>
-                        <h5>Artivista, Ator e Produtor Cultural</h5>
-                      </div>
-                    </div>
-                    <div className="col-lg-4 col-xl-2 col-sm-4">
-                      <div className="testimonial_slider_img">
-                        <img src={parceria2} alt="#" />
-                      </div>
-                    </div>
-                    <div className="col-xl-4 d-none d-xl-block">
-                      <div className="testimonial_slider_text">
-                        <p>
-                          Bacharel em Ciências Sociais - Universidade de São
-                          Paulo (USP) e estudante de pós-graduação em Gestão e
-                          Análise Estratégica de Dados - Pontifícia Universidade
-                          Católica de Minas Gerais (PUC - MInas). Tem
-                          experiência em institutos de investigação e empresas
-                          multinacionais, atuando na análise de dados sobre
-                          negócios, produtos e mercado.
-                        </p>
-                        <h4>Gabriela Amorim</h4>
-                        <h5>Data Analyst</h5>
-                      </div>
-                    </div>
-                    <div className="col-xl-2 d-none d-xl-block">
-                      <div className="testimonial_slider_img">
-                        <img src={parceria6} alt="Gabriela Amorim" />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="testimonial_slider">
-                  <div className="row">
-                    <div className="col-lg-8 col-xl-4 col-sm-8 align-self-center">
-                      <div className="testimonial_slider_text">
-                        <p>
-                          Doutora em Engenharia de Produção pela Universidade de
-                          São Paulo (USP). Atua como professora na Universidade
-                          Federal do Rio Grande do Norte (UFRN). Tem experiência
-                          e publicações na área de Engenharia de Produção,
-                          atuando, principalmente, nos seguintes temas: Data
-                          Envelopment Analysis (DEA), Indice Malmquist,
-                          Portfolios, Inovação tecnológica, Pequena empresa,
-                          Programas governamentais, Projetos de investimentos,
-                          Economia e custos industriais/ governamentais.
-                        </p>
-                        <h4>Mariana Almeida</h4>
-                        <h5>Professora de Engenharia Econômica</h5>
-                      </div>
-                    </div>
-                    <div className="col-lg-4 col-xl-2 col-sm-4">
-                      <div className="testimonial_slider_img">
-                        <img src={parceria10} alt="Mariana Almeida" />
-                      </div>
-                    </div>
-                    <div className="col-xl-4 d-none d-xl-block">
-                      <div className="testimonial_slider_text">
-                        <p>
-                          Cursei Jornalismo porque amava ouvir e contar
-                          histórias, conhecer pessoas e cenários diferentes para
-                          mostrá-los ao mundo. No caminho, me encontrei na área
-                          de Marketing. Mais do que conhecer, eu quero agir, ver
-                          os ponteiros certos mexendo. Sim, estratégia, porque
-                          que eu gosto mesmo é de pensar, testar e evoluir. Para
-                          isso, acredito que a chave seja ouvir as pessoas,
-                          interpretar os dados e construir histórias relevantes.
-                        </p>
-                        <h4>Mariana Zancanaro</h4>
-                        <h5>Brand Strategist</h5>
-                      </div>
-                    </div>
-                    <div className="col-xl-2 d-none d-xl-block">
-                      <div className={parceria5}>
-                        <img
-                          src="img\about\Mariana.jpeg"
-                          alt="Mariana Zancanaro"
-                        />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
       </section>
-
+      <Box
+        component={Container}
+        sx={{
+          display: "flex",
+          flexWrap: "wrap",
+          justifyContent: "space-between",
+        }}
+      >
+        {participantes.map((item) => (
+          <Box key={item.id} sx={{ display: "flex", width: 500, m: 2, gap: 2 }}>
+            <Box
+              component={Paper}
+              elevation={10}
+              p={5}
+              sx={{
+                display: "flex",
+                flexDirection: "column",
+                width: "100%",
+                backgroundImage: `url(${aspas})`,
+                backgroundPosition: "center",
+                backgroundRepeat: "no-repeat",
+                backgroundSize: "100px",
+              }}
+            >
+              <Typography lineHeight={2}>{item.descricao}</Typography>
+              <Typography mt={5} fontSize={20} fontWeight="bold" color="gray">
+                {item.nome}
+              </Typography>
+              <Typography fontStyle="italic" fontSize={12}>
+                {item.cargo}
+              </Typography>
+            </Box>
+            <Box>
+              <img
+                className="imgParticipantes"
+                src={item.imagem}
+                alt={item.nome}
+              />
+            </Box>
+          </Box>
+        ))}
+      </Box>
       <section className="blog_part section_padding">
         <div className="container">
           <div className="row justify-content-center">
