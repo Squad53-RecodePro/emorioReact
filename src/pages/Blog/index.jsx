@@ -8,15 +8,17 @@ import criancaRural from "../../assets/img/blog/criancaRural.jpg"
 import estudoTech from "../../assets/img/blog/business.jpg"
 import voNeto from "../../assets/img/blog/grandmother-1822564_1280.jpg"
 
+import { Link } from "react-router-dom";
+
 const Blog = () => {
   return (
     <div>
-      <section class="breadcrumb breadcrumb_bg">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-12">
-              <div class="breadcrumb_iner text-center">
-                <div class="breadcrumb_iner_item">
+      <section className="breadcrumb breadcrumb_bg">
+        <div className="container">
+          <div className="row">
+            <div className="col-lg-12">
+              <div className="breadcrumb_iner text-center">
+                <div className="breadcrumb_iner_item">
                   <h2>Nosso Blog</h2>
                   <p>
                     Início<span>/</span>Blog
@@ -28,26 +30,26 @@ const Blog = () => {
         </div>
       </section>
 
-      <section class="blog_area section_padding">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-8 mb-5 mb-lg-0">
-              <div class="blog_left_sidebar">
-                <article class="blog_item">
-                  <div class="blog_item_img">
+      <section className="blog_area section_padding">
+        <div className="container">
+          <div className="row">
+            <div className="col-lg-8 mb-5 mb-lg-0">
+              <div className="blog_left_sidebar">
+                <article className="blog_item">
+                  <div className="blog_item_img">
                     <img
-                      class="card-img rounded-0" 
+                      className="card-img rounded-0" 
                       src={primeiroPitch} 
                       alt="Pitch Emorio"
                     />
-                    <a href="#" class="blog_item_date">
+                    <a href="#" className="blog_item_date">
                       <h3>21</h3>
                       <p>Julho</p>
                     </a>
                   </div>
 
-                  <div class="blog_details">
-                    <a class="d-inline-block" href="artigos/artigo007.html">
+                  <div className="blog_details">
+                    <a className="d-inline-block" href="artigos/artigo007.html">
                       <h2>Pitch, Bastidores e Feedbacks</h2>
                     </a>
                     <p>
@@ -56,36 +58,36 @@ const Blog = () => {
                       RecodePro, no dia 21 de setembro.
                     </p>
 
-                    <ul class="blog-info-link">
+                    <ul className="blog-info-link">
                       <li>
                         <a href="#">
-                          <i class="far fa-user"></i> EmoriÔ Digital, Projetos
+                          <i className="far fa-user"></i> EmoriÔ Digital, Projetos
                         </a>
                       </li>
                       <li>
                         <a href="#">
-                          <i class="far fa-comments"></i> 03 Comentários
+                          <i className="far fa-comments"></i> 03 Comentários
                         </a>
                       </li>
                     </ul>
                   </div>
                 </article>
 
-                <article class="blog_item">
-                  <div class="blog_item_img">
+                <article className="blog_item">
+                  <div className="blog_item_img">
                     <img
-                      class="card-img rounded-0"
+                      className="card-img rounded-0"
                       src={arteSustentabilidade} 
                       alt="capaArteeSustentabilidade"
                     />
-                    <a href="#" class="blog_item_date">
+                    <a href="#" className="blog_item_date">
                       <h3>22</h3>
                       <p>Julho</p>
                     </a>
                   </div>
 
-                  <div class="blog_details">
-                    <a class="d-inline-block" href="artigos/artigo006.html">
+                  <div className="blog_details">
+                    <a className="d-inline-block" href="artigos/artigo006.html">
                       <h2>
                         Projeto Arte e Sustentabilidade - Andréia Rodrigues
                       </h2>
@@ -103,40 +105,43 @@ const Blog = () => {
                       telas feitas com materiais recicláveis.
                     </p>
 
-                    <ul class="blog-info-link">
+                    <ul className="blog-info-link">
                       <li>
                         <a href="#">
-                          <i class="far fa-user"></i> Educação, Arte,
+                          <i className="far fa-user"></i> Educação, Arte,
                           Sustentabilidade
                         </a>
                       </li>
                       <li>
                         <a href="#">
-                          <i class="far fa-comments"></i> 03 Comentários
+                          <i className="far fa-comments"></i> 03 Comentários
                         </a>
                       </li>
                     </ul>
                   </div>
                 </article>
-                <article class="blog_item">
-                  <div class="blog_item_img">
+                <article className="blog_item">
+                  <div className="blog_item_img">
                     <img
-                      class="card-img rounded-0"
+                      className="card-img rounded-0"
                       src={imgGil} 
                       alt="gil_bayana"
                     />
-                    <a href="#" class="blog_item_date">
+                    <div className="blog_item_date">
                       <h3>13</h3>
                       <p>Julho</p>
-                    </a>
+                    </div>
                   </div>
 
-                  <div class="blog_details">
-                    <a class="d-inline-block" href="artigos/artigo001.html">
+                  <div className="blog_details">
+                  <Link to="/Artigo001">
                       <h2>
                         Emoriô: conheça a música que inspirou nossa agência.
                       </h2>
-                    </a>
+                    {/* <a className="d-inline-block" href="artigos/artigo001.html"> */}
+
+                  </Link>
+                     
                     <p>
                       Em um dos episódios do referencial programa MPB Especial
                       (Ensaio) no ano de 1975, João Donato afirma que foi o
@@ -156,37 +161,38 @@ const Blog = () => {
                       carreira e a música brasileira até hoje.
                     </p>
 
-                    <ul class="blog-info-link">
+                    <ul className="blog-info-link">
                       <li>
                         <a href="#">
-                          <i class="far fa-user"></i> Música, Show, Cultura
+                          <i className="far fa-user"></i> Música, Cultura
                         </a>
                       </li>
                       <li>
                         <a href="#">
-                          <i class="far fa-comments"></i> 03 Comments
+                          <i className="far fa-comments"></i> 03 Comentários
                         </a>
                       </li>
                     </ul>
                   </div>
                 </article>
-                <article class="blog_item">
-                  <div class="blog_item_img">
+                <article className="blog_item">
+                  <div className="blog_item_img">
                     <img
-                      class="card-img rounded-0"
+                      className="card-img rounded-0"
                       src={meninoViolao} 
                       alt=""
                     />
-                    <a href="#" class="blog_item_date">
+                    <a href="#" className="blog_item_date">
                       <h3>13</h3>
                       <p>Julho</p>
                     </a>
                   </div>
 
-                  <div class="blog_details">
-                    <a class="d-inline-block" href="artigos/artigo002.html">
+                  <div className="blog_details">
+                    <Link className="d-inline-block" to="/Artigo003">
                       <h2>Como A Música Auxilia Na Educação</h2>
-                    </a>
+                  
+                    </Link>
                     <p>
                       O acesso às instituições de ensino e a alfabetização não
                       são uniformes no território brasileiro. Existem diferenças
@@ -197,38 +203,38 @@ const Blog = () => {
                       (IBGE, 2011), indicadores defasados em relação ao urbano.
                     </p>
 
-                    <ul class="blog-info-link">
+                    <ul className="blog-info-link">
                       <li>
                         <a href="#">
-                          <i class="far fa-user"></i> Educação, Cultura
+                          <i className="far fa-user"></i> Educação, Cultura
                         </a>
                       </li>
                       <li>
                         <a href="#">
-                          <i class="far fa-comments"></i> 03 Comments
+                          <i className="far fa-comments"></i> 03 Comentários
                         </a>
                       </li>
                     </ul>
                   </div>
                 </article>
 
-                <article class="blog_item">
-                  <div class="blog_item_img">
+                <article className="blog_item">
+                  <div className="blog_item_img">
                     <img
-                      class="card-img rounded-0"
+                      className="card-img rounded-0"
                       src={criancaRural}  
                       alt="bg"
                     />
-                    <a href="#" class="blog_item_date">
+                    <div className="blog_item_date">
                       <h3>13</h3>
                       <p>Julho</p>
-                    </a>
+                    </div>
                   </div>
 
-                  <div class="blog_details">
-                    <a class="d-inline-block" href="artigos/artigo003.html">
+                  <div className="blog_details">
+                    <Link className="d-inline-block" to="/Artigo002">
                       <h2>Educação: Contraste entre meio urbano e rural</h2>
-                    </a>
+                    </Link>
                     <p align="justify">
                       O alfabetismo é visto a partir da valorização da cultura
                       escrita, ou seja, elementos da leitura e da escrita que
@@ -242,36 +248,36 @@ const Blog = () => {
                       específico.
                     </p>
 
-                    <ul class="blog-info-link">
+                    <ul className="blog-info-link">
                       <li>
                         <a href="#">
-                          <i class="far fa-user"></i> Educação, Zona Rural
+                          <i className="far fa-user"></i> Educação, Zona Rural
                         </a>
                       </li>
                       <li>
                         <a href="#">
-                          <i class="far fa-comments"></i> 03 Comments
+                          <i className="far fa-comments"></i> 03 Comentários
                         </a>
                       </li>
                     </ul>
                   </div>
                 </article>
 
-                <article class="blog_item">
-                  <div class="blog_item_img">
+                <article className="blog_item">
+                  <div className="blog_item_img">
                     <img
-                      class="card-img rounded-0"
+                      className="card-img rounded-0"
                       src={estudoTech} 
                       alt=""
                     />
-                    <a href="#" class="blog_item_date">
+                    <a href="#" className="blog_item_date">
                       <h3>15</h3>
                       <p>Jan</p>
                     </a>
                   </div>
 
-                  <div class="blog_details">
-                    <a class="d-inline-block" href="artigos/artigo004.html">
+                  <div className="blog_details">
+                    <a className="d-inline-block" href="artigos/artigo004.html">
                       <h2>
                         07 dicas valiosas da Introdução de Web Sites que
                         funcionam:
@@ -288,36 +294,36 @@ const Blog = () => {
                       impresso por centenas de anos são igualmente válidos
                       online; em alguns casos são ainda mais.
                     </p>
-                    <ul class="blog-info-link">
+                    <ul className="blog-info-link">
                       <li>
                         <a href="#">
-                          <i class="far fa-user"></i> Travel, Lifestyle
+                          <i className="far fa-user"></i> Tecnologia
                         </a>
                       </li>
                       <li>
                         <a href="#">
-                          <i class="far fa-comments"></i> 03 Comments
+                          <i className="far fa-comments"></i> 03 Comentários
                         </a>
                       </li>
                     </ul>
                   </div>
                 </article>
 
-                <article class="blog_item">
-                  <div class="blog_item_img">
+                <article className="blog_item">
+                  <div className="blog_item_img">
                     <img
-                      class="card-img rounded-0"
+                      className="card-img rounded-0"
                       src={voNeto} 
                       alt="fundoimg"
                     />
-                    <a href="#" class="blog_item_date">
+                    <a href="#" className="blog_item_date">
                       <h3>15</h3>
                       <p>Jan</p>
                     </a>
                   </div>
 
-                  <div class="blog_details">
-                    <a class="d-inline-block" href="artigos/artigo005.html">
+                  <div className="blog_details">
+                    <a className="d-inline-block" href="artigos/artigo005.html">
                       <h2>
                         Como a EmoriÔ Digital Auxilia na Erradicação do
                         Analfabetismo nas Zonas Rurais
@@ -333,69 +339,69 @@ const Blog = () => {
                       compreender textos simples, bem como realizar operações
                       matemáticas mais elaboradas.”
                     </p>
-                    <ul class="blog-info-link">
+                    <ul className="blog-info-link">
                       <li>
                         <a href="#">
-                          <i class="far fa-user"></i> Travel, Lifestyle
+                          <i className="far fa-user"></i> Educação, Zona Rural, EmoriÔ Digital
                         </a>
                       </li>
                       <li>
                         <a href="#">
-                          <i class="far fa-comments"></i> 03 Comments
+                          <i className="far fa-comments"></i> 03 Comentários
                         </a>
                       </li>
                     </ul>
                   </div>
                 </article>
 
-                <nav class="blog-pagination justify-content-center d-flex">
-                  <ul class="pagination">
-                    <li class="page-item">
-                      <a href="#" class="page-link" aria-label="Previous">
-                        <i class="ti-angle-left"></i>
+                <nav className="blog-pagination justify-content-center d-flex">
+                  <ul className="pagination">
+                    <li className="page-item">
+                      <a href="#" className="page-link" aria-label="Previous">
+                        <i className="ti-angle-left"></i>
                       </a>
                     </li>
-                    <li class="page-item">
-                      <a href="#" class="page-link">
+                    <li className="page-item">
+                      <a href="#" className="page-link">
                         1
                       </a>
                     </li>
-                    <li class="page-item active">
-                      <a href="#" class="page-link">
+                    <li className="page-item active">
+                      <a href="#" className="page-link">
                         2
                       </a>
                     </li>
-                    <li class="page-item">
-                      <a href="#" class="page-link" aria-label="Next">
-                        <i class="ti-angle-right"></i>
+                    <li className="page-item">
+                      <a href="#" className="page-link" aria-label="Next">
+                        <i className="ti-angle-right"></i>
                       </a>
                     </li>
                   </ul>
                 </nav>
               </div>
             </div>
-            <div class="col-lg-4">
-              <div class="blog_right_sidebar">
-                <aside class="single_sidebar_widget search_widget">
+            <div className="col-lg-4">
+              <div className="blog_right_sidebar">
+                <aside className="single_sidebar_widget search_widget">
                   <form action="#">
-                    <div class="form-group">
-                      <div class="input-group mb-3">
+                    <div className="form-group">
+                      <div className="input-group mb-3">
                         <input
                           type="text"
-                          class="form-control"
+                          className="form-control"
                           placeholder="Pesquisar Palavra-Chave"
                           onfocus="this.placeholder = ''"
                           onblur="this.placeholder = 'Pesquisar Palavra-Chave'"
                         />
-                        <div class="input-group-append">
-                          <button class="btn" type="button">
-                            <i class="ti-search"></i>
+                        <div className="input-group-append">
+                          <button className="btn" type="button">
+                            <i className="ti-search"></i>
                           </button>
                         </div>
                       </div>
                     </div>
                     <button
-                      class="button rounded-0 primary-bg text-white w-100 btn_1"
+                      className="button rounded-0 primary-bg text-white w-100 btn_1"
                       type="submit"
                     >
                       Pesquisar
@@ -403,118 +409,124 @@ const Blog = () => {
                   </form>
                 </aside>
 
-                <aside class="single_sidebar_widget post_category_widget">
-                  <h4 class="widget_title">Categorias</h4>
-                  <ul class="list cat-list">
+                {/* <aside className="single_sidebar_widget post_category_widget">
+                  <h4 className="widget_title">Categorias</h4>
+                  <ul className="list cat-list">
                     <li>
-                      <a href="#" class="d-flex">
+                      <a href="#" className="d-flex">
                         <p>Aprendizado</p>
                         <p>(37)</p>
                       </a>
                     </li>
                     <li>
-                      <a href="#" class="d-flex">
+                      <a href="#" className="d-flex">
                         <p>Cultura</p>
                         <p>(10)</p>
                       </a>
                     </li>
                     <li>
-                      <a href="#" class="d-flex">
+                      <a href="#" className="d-flex">
                         <p>Zonas Rurais</p>
                         <p>(03)</p>
                       </a>
                     </li>
                     <li>
-                      <a href="#" class="d-flex">
+                      <a href="#" className="d-flex">
                         <p>Tecnologia</p>
                         <p>(11)</p>
                       </a>
                     </li>
                     <li>
-                      <a href="#" class="d-flex">
+                      <a href="#" className="d-flex">
                         <p>Programação</p>
                         <p>(21)</p>
                       </a>
                     </li>
                     <li>
-                      <a href="#" class="d-flex">
+                      <a href="#" className="d-flex">
                         <p>Educação</p>
                         <p>(09)</p>
                       </a>
                     </li>
                   </ul>
-                </aside>
+                </aside> */}
 
-                <aside class="single_sidebar_widget popular_post_widget">
-                  <h3 class="widget_title">Artigos Recentes</h3>
-                  <div class="media post_item">
+                {/* <aside className="single_sidebar_widget popular_post_widget">
+                  <h3 className="widget_title">Artigos Recentes</h3>
+                  <div className="media post_item">
                     <img src="img/post/post_1.png" alt="post" /> 
-                    <div class="media-body">
+                    <div className="media-body">
                       <a href="single-blog.html">
                         <h3>From life was you fish...</h3>
                       </a>
                       <p>January 12, 2019</p>
                     </div>
                   </div>
-                  <div class="media post_item">
+                  <div className="media post_item">
                     <img src="img/post/post_2.png" alt="post" />
-                    <div class="media-body">
+                    <div className="media-body">
                       <a href="single-blog.html">
                         <h3>The Amazing Hubble</h3>
                       </a>
                       <p>02 Hours ago</p>
                     </div>
                   </div>
-                  <div class="media post_item">
+                  <div className="media post_item">
                     <img src="img/post/post_3.png" alt="post" />
-                    <div class="media-body">
+                    <div className="media-body">
                       <a href="single-blog.html">
                         <h3>Astronomy Or Astrology</h3>
                       </a>
                       <p>03 Hours ago</p>
                     </div>
                   </div>
-                  <div class="media post_item">
+                  <div className="media post_item">
                     <img src="img/post/post_4.png" alt="post" />
-                    <div class="media-body">
+                    <div className="media-body">
                       <a href="single-blog.html">
                         <h3>Asteroids telescope</h3>
                       </a>
                       <p>01 Hours ago</p>
                     </div>
                   </div>
-                </aside>
-                <aside class="single_sidebar_widget tag_cloud_widget">
-                  <h4 class="widget_title">Tags</h4>
-                  <ul class="list">
+                </aside> */}
+                <aside className="single_sidebar_widget tag_cloud_widget">
+                  <h4 className="widget_title">Tags</h4>
+                  <ul className="list">
                     <li>
-                      <a href="#">Aprendizado</a>
+                      <a href="#">EmoriÔ Digital</a>
                     </li>
                     <li>
                       <a href="#">Cultura</a>
                     </li>
                     <li>
-                      <a href="#">Zonas Rurais</a>
+                      <a href="#">Zona Rural</a>
                     </li>
                     <li>
                       <a href="#">Tecnologia</a>
                     </li>
                     <li>
-                      <a href="#">Programação</a>
+                      <a href="#">Arte</a>
                     </li>
                     <li>
                       <a href="#">Educação</a>
                     </li>
+                    <li>
+                      <a href="#">Música</a>
+                    </li>
+                    <li>
+                      <a href="#">Sustentabilidade</a>
+                    </li>
                   </ul>
                 </aside>
 
-                <aside class="single_sidebar_widget instagram_feeds">
-                  <h4 class="widget_title">Galeria</h4>
-                  <ul class="instagram_row flex-wrap">
+                {/* <aside className="single_sidebar_widget instagram_feeds">
+                  <h4 className="widget_title">Galeria</h4>
+                  <ul className="instagram_row flex-wrap">
                     <li>
                       <a href="#">
                         <img
-                          class="img-fluid"
+                          className="img-fluid"
                           src="img/post/post_5.png"
                           alt=""
                         />
@@ -523,7 +535,7 @@ const Blog = () => {
                     <li>
                       <a href="#">
                         <img
-                          class="img-fluid"
+                          className="img-fluid"
                           src="img/post/post_6.png"
                           alt=""
                         />
@@ -532,7 +544,7 @@ const Blog = () => {
                     <li>
                       <a href="#">
                         <img
-                          class="img-fluid"
+                          className="img-fluid"
                           src="img/post/post_7.png"
                           alt=""
                         />
@@ -541,7 +553,7 @@ const Blog = () => {
                     <li>
                       <a href="#">
                         <img
-                          class="img-fluid"
+                          className="img-fluid"
                           src="img/post/post_8.png"
                           alt=""
                         />
@@ -550,7 +562,7 @@ const Blog = () => {
                     <li>
                       <a href="#">
                         <img
-                          class="img-fluid"
+                          className="img-fluid"
                           src="img/post/post_9.png"
                           alt=""
                         />
@@ -559,14 +571,14 @@ const Blog = () => {
                     <li>
                       <a href="#">
                         <img
-                          class="img-fluid"
+                          className="img-fluid"
                           src="img/post/post_10.png"
                           alt=""
                         />
                       </a>
                     </li>
                   </ul>
-                </aside>
+                </aside> */}
               </div>
             </div>
           </div>
