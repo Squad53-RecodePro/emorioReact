@@ -4,6 +4,8 @@ import UserLayout from "../../layout/User";
 
 import { listaBlog } from "../../utils/listaBlog";
 
+import { Link } from "react-router-dom";
+
 const Blog = () => {
   return (
     <UserLayout>
@@ -55,28 +57,28 @@ const Blog = () => {
                 ))}
               </div>
             </div>
-            <div class="col-lg-4">
-              <div class="blog_right_sidebar">
-                <aside class="single_sidebar_widget search_widget">
+            <div className="col-lg-4">
+              <div className="blog_right_sidebar">
+                <aside className="single_sidebar_widget search_widget">
                   <form action="#">
-                    <div class="form-group">
-                      <div class="input-group mb-3">
+                    <div className="form-group">
+                      <div className="input-group mb-3">
                         <input
                           type="text"
-                          class="form-control"
+                          className="form-control"
                           placeholder="Pesquisar Palavra-Chave"
                           onfocus="this.placeholder = ''"
                           onblur="this.placeholder = 'Pesquisar Palavra-Chave'"
                         />
-                        <div class="input-group-append">
-                          <button class="btn" type="button">
-                            <i class="ti-search"></i>
+                        <div className="input-group-append">
+                          <button className="btn" type="button">
+                            <i className="ti-search"></i>
                           </button>
                         </div>
                       </div>
                     </div>
                     <button
-                      class="button rounded-0 primary-bg text-white w-100 btn_1"
+                      className="button rounded-0 primary-bg text-white w-100 btn_1"
                       type="submit"
                     >
                       Pesquisar
@@ -84,68 +86,74 @@ const Blog = () => {
                   </form>
                 </aside>
 
-                <aside class="single_sidebar_widget post_category_widget">
-                  <h4 class="widget_title">Categorias</h4>
-                  <ul class="list cat-list">
+                {/* <aside className="single_sidebar_widget post_category_widget">
+                  <h4 className="widget_title">Categorias</h4>
+                  <ul className="list cat-list">
                     <li>
-                      <a href="#" class="d-flex">
+                      <a href="#" className="d-flex">
                         <p>Aprendizado</p>
                         <p>(37)</p>
                       </a>
                     </li>
                     <li>
-                      <a href="#" class="d-flex">
+                      <a href="#" className="d-flex">
                         <p>Cultura</p>
                         <p>(10)</p>
                       </a>
                     </li>
                     <li>
-                      <a href="#" class="d-flex">
+                      <a href="#" className="d-flex">
                         <p>Zonas Rurais</p>
                         <p>(03)</p>
                       </a>
                     </li>
                     <li>
-                      <a href="#" class="d-flex">
+                      <a href="#" className="d-flex">
                         <p>Tecnologia</p>
                         <p>(11)</p>
                       </a>
                     </li>
                     <li>
-                      <a href="#" class="d-flex">
+                      <a href="#" className="d-flex">
                         <p>Programação</p>
                         <p>(21)</p>
                       </a>
                     </li>
                     <li>
-                      <a href="#" class="d-flex">
+                      <a href="#" className="d-flex">
                         <p>Educação</p>
                         <p>(09)</p>
                       </a>
                     </li>
                   </ul>
-                </aside>
+                </aside> */}
 
                 <aside class="single_sidebar_widget tag_cloud_widget">
                   <h4 class="widget_title">Tags</h4>
                   <ul class="list">
                     <li>
-                      <a href="#">Aprendizado</a>
+                      <a href="#">EmoriÔ Digital</a>
                     </li>
                     <li>
                       <a href="#">Cultura</a>
                     </li>
                     <li>
-                      <a href="#">Zonas Rurais</a>
+                      <a href="#">Zona Rural</a>
                     </li>
                     <li>
                       <a href="#">Tecnologia</a>
                     </li>
                     <li>
-                      <a href="#">Programação</a>
+                      <a href="#">Arte</a>
                     </li>
                     <li>
                       <a href="#">Educação</a>
+                    </li>
+                    <li>
+                      <a href="#">Música</a>
+                    </li>
+                    <li>
+                      <a href="#">Sustentabilidade</a>
                     </li>
                   </ul>
                 </aside>
