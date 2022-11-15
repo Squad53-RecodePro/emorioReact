@@ -34,3 +34,7 @@ button {
 a {
   text-decoration: none;
 }
+
+.ghost-button {
+  color: #222;
+}

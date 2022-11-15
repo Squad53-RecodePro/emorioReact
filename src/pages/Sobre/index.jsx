@@ -5,105 +5,111 @@ import imgVisao from "../../assets/img/about/visao.jpg";
 import imgValores from "../../assets/img/about/valores.jpg";
 import imgDoacao from "../../assets/img/about/doacao.jpg";
 
+import UserLayout from "../../layout/User";
+import { Container, Box } from "@mui/material";
+
 const Sobre = () => {
   return (
-    <div>
-      <section class="breadcrumb breadcrumb_bg">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-12">
-              <div class="breadcrumb_iner text-center">
-                <div class="breadcrumb_iner_item">
-                  <h2>Sobre Nós</h2>
-                  <p>
-                    Início<span>/</span>Sobre Nós
-                  </p>
+    <UserLayout>
+      <div>
+        <section class="breadcrumb breadcrumb_bg">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="breadcrumb_iner text-center">
+                  <div class="breadcrumb_iner_item">
+                    <h2>Sobre Nós</h2>
+                    <p>
+                      Início<span>/</span>Sobre Nós
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      <div className="container-lg">
-        <hr class="featurette-divider" />
-        <div class="row justify-content-center">
-          <div class="col-xl-5">
-            <div class="section_tittle text-center">
-              <p>Apresentação</p>
-              <h2>Conheça a EmoriÔ</h2>
+        <div className="container-lg">
+          <hr class="featurette-divider" />
+          <div class="row justify-content-center">
+            <div class="col-xl-5">
+              <div class="section_tittle text-center">
+                <p>Apresentação</p>
+                <h2>Conheça a EmoriÔ</h2>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="row featurette">
-          <div class="col-md-7">
-            <h2 class=" fw-normal lh-1">
-              Missão.
-              <span class="text-muted"> Apoiar projetos sócio culturais.</span>
-            </h2>
-            <p class="lead">
-              Ajudar na erradicação do analfabetismo através de ferramentas
-              digitais, apoiando iniciativas em zonas rurais, para melhoria da
-              qualidade de vida, garantir direitos e bem estar.
-            </p>
-          </div>
-          <div class="col-md-5">
-            <img src={imgMissao} alt="Imagem Missão" />
-          </div>
-        </div>
-
-        <hr class="featurette-divider" />
-
-        <div class="row featurette">
-          <div class="col-md-7 order-md-2">
-            <h2 class=" fw-normal lh-1">
-              Visão.
-              <span class="text-muted">
-                Contribuir com iniciativas transformadoras.
-              </span>
-            </h2>
-            <p class="lead">
-              Nosso projeto pretende apoiar 05 projetos em zonas rurais, campos
-              e florestas. Atingir 300 pessoas diretamente e contribuir na
-              formação de 3.000 usuários do blog.
-            </p>
-          </div>
-          <div class="col-md-5 order-md-1">
-            <img src={imgVisao} alt="Imagem Visão" />
-          </div>
-        </div>
-
-        <hr class="featurette-divider" />
-
-        <div class="row featurette">
-          <div class="col-md-7">
-            <h2 class="fw-normal lh-1">
-              Valores.
-              <span class="text-muted">Construção de um Mundo melhor.</span>
-            </h2>
-            <p class="lead">
-              Cidadania, Ética, Equidade, Inovação, Transparência,
-              Responsabilidade social, Democratização da informação, Diversidade
-              e Pluralidade.
-            </p>
-          </div>
-          <div class="col-md-5">
-            <img src={imgValores} alt="Imagem Valores" />
-          </div>
-        </div>
-
-        <hr class="featurette-divider" />
-
-        <div class="row justify-content-center">
-          <div class="col-xl-5">
-            <div class="section_tittle text-center">
-              <p>Aliadas</p>
-              <h2>Ações Utilizadas</h2>
+          <div class="row featurette">
+            <div class="col-md-7">
+              <h2 class=" fw-normal lh-1">
+                Missão.
+                <span class="text-muted">
+                  {" "}
+                  Apoiar projetos sócio culturais.
+                </span>
+              </h2>
+              <p class="lead">
+                Ajudar na erradicação do analfabetismo através de ferramentas
+                digitais, apoiando iniciativas em zonas rurais, para melhoria da
+                qualidade de vida, garantir direitos e bem estar.
+              </p>
+            </div>
+            <div class="col-md-5">
+              <img src={imgMissao} alt="Imagem Missão" />
             </div>
           </div>
-        </div>
 
-        <div class="cardAbout">
+          <hr class="featurette-divider" />
+
+          <div class="row featurette">
+            <div class="col-md-7 order-md-2">
+              <h2 class=" fw-normal lh-1">
+                Visão.
+                <span class="text-muted">
+                  Contribuir com iniciativas transformadoras.
+                </span>
+              </h2>
+              <p class="lead">
+                Nosso projeto pretende apoiar 05 projetos em zonas rurais,
+                campos e florestas. Atingir 300 pessoas diretamente e contribuir
+                na formação de 3.000 usuários do blog.
+              </p>
+            </div>
+            <div class="col-md-5 order-md-1">
+              <img src={imgVisao} alt="Imagem Visão" />
+            </div>
+          </div>
+
+          <hr class="featurette-divider" />
+
+          <div class="row featurette">
+            <div class="col-md-7">
+              <h2 class="fw-normal lh-1">
+                Valores.
+                <span class="text-muted">Construção de um Mundo melhor.</span>
+              </h2>
+              <p class="lead">
+                Cidadania, Ética, Equidade, Inovação, Transparência,
+                Responsabilidade social, Democratização da informação,
+                Diversidade e Pluralidade.
+              </p>
+            </div>
+            <div class="col-md-5">
+              <img src={imgValores} alt="Imagem Valores" />
+            </div>
+          </div>
+
+          <hr class="featurette-divider" />
+
+          <div class="row justify-content-center">
+            <div class="col-xl-5">
+              <div class="section_tittle text-center">
+                <p>Aliadas</p>
+                <h2>Ações Utilizadas</h2>
+              </div>
+            </div>
+          </div>
+
           <section class="feature_part single_feature_padding">
             <div class="container">
               <div class="row">
@@ -169,17 +175,13 @@ const Sobre = () => {
               </div>
             </div>
           </section>
-        </div>
-
-        <section class="learning_part">
-          <div>
+          <Container className="learning_part">
             <div class="row align-items-sm-center align-items-lg-stretch">
-              <div class="col-md-6 col-lg-7">
-                <div class="learning_img">
-                  <img src={imgDoacao} alt="Doações" />
-                </div>
-              </div>
-              <div class="col-md-5 col-lg-5">
+              <Box width={"50%"}>
+                <img src={imgDoacao} alt="Doações" />
+              </Box>
+
+              <div class="col-md-5 col-lg-6">
                 <div class="learning_member_text">
                   <h5>Seja um parceiro</h5>
                   <h2>Apoiar nossa agência na mudança de vidas</h2>
@@ -192,12 +194,9 @@ const Sobre = () => {
                   <ul>
                     <li>
                       <span class="ti-pencil-alt"></span>Ajude por meio de
-                      doações
+                      doações, enviando cestas básicas e materiais escolares
                     </li>
-                    <li>
-                      <span class="ti-ruler-pencil"></span>Enviando cestas
-                      básicas e materiais escolares
-                    </li>
+
                     <li>
                       <span class="ti-ruler-pencil"></span>Gravando vídeos aulas
                       e cursos para a plataforma
@@ -206,10 +205,10 @@ const Sobre = () => {
                 </div>
               </div>
             </div>
-          </div>
-        </section>
+          </Container>
+        </div>
       </div>
-    </div>
+    </UserLayout>
   );
 };
 

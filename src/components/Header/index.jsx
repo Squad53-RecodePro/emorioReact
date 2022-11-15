@@ -95,9 +95,6 @@ const Header = () => {
                       >
                         Cura Amazônica
                       </a>
-                      <p className="dropdown-item">
-                        Espaço Cultural Marielle Franco
-                      </p>
                     </div>
                   </li>
                 </ul>
