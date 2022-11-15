@@ -27,7 +27,7 @@ const Artigo02 = () => {
                 <div class="feature-img">
                   <img
                     class="img-fluid"
-                    src="/assets/blog/arte-sustentavel.jpeg"
+                    src="/assets/blog/criancas-rurais.jpg"
                     alt="Bg"
                     width="100%"
                   />

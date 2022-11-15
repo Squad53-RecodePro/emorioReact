@@ -412,7 +412,7 @@ const Inicio = () => {
 
                     <div className="card-body">
                       <p className="btn_4">Analfabetismo</p>
-                      <a href="/artigo6">
+                      <a href="/artigo7">
                         <h5 className="card-title">
                           Como a EmoriÔ Digital Auxilia na Erradicação do
                           Analfabetismo nas Zonas Rurais

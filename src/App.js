@@ -10,13 +10,13 @@ import Login from "./pages/Login";
 import Register from "./pages/Register";
 import NotFound from "./pages/NotFound";
 
-import Artigo01 from "./pages/Artigos/Artigo01";
-import Artigo02 from "./pages/Artigos/Artigo02";
-import Artigo03 from "./pages/Artigos/Artigo03";
-import Artigo04 from "./pages/Artigos/Artigo04";
-import Artigo05 from "./pages/Artigos/Artigo05";
-import Artigo06 from "./pages/Artigos/Artigo06";
-import Artigo07 from "./pages/Artigos/Artigo07";
+import Artigo01 from "./pages/Artigos/Artigo1";
+import Artigo02 from "./pages/Artigos/Artigo2";
+import Artigo03 from "./pages/Artigos/Artigo3";
+import Artigo04 from "./pages/Artigos/Artigo4";
+import Artigo05 from "./pages/Artigos/Artigo5";
+import Artigo06 from "./pages/Artigos/Artigo6";
+import Artigo07 from "./pages/Artigos/Artigo7";
 
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
@@ -34,13 +34,13 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Inicio />} />
         <Route path="/blog" element={<Blog />} />
-        <Route path="/artigo1" element={<Artigo07 />} />
-        <Route path="/artigo2" element={<Artigo06 />} />
-        <Route path="/artigo3" element={<Artigo01 />} />
-        <Route path="/artigo4" element={<Artigo03 />} />
-        <Route path="/artigo5" element={<Artigo02 />} />
-        <Route path="/artigo6" element={<Artigo05 />} />
-        <Route path="/artigo7" element={<Artigo04 />} />
+        <Route path="/artigo1" element={<Artigo01 />} />
+        <Route path="/artigo2" element={<Artigo02 />} />
+        <Route path="/artigo3" element={<Artigo03 />} />
+        <Route path="/artigo4" element={<Artigo04 />} />
+        <Route path="/artigo5" element={<Artigo05 />} />
+        <Route path="/artigo6" element={<Artigo06 />} />
+        <Route path="/artigo7" element={<Artigo07 />} />
 
         <Route path="/contato" element={<Contato />} />
         <Route path="/equipe" element={<Equipe />} />

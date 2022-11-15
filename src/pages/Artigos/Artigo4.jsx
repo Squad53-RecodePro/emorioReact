@@ -27,7 +27,7 @@ const Artigo03 = () => {
                 <div class="feature-img">
                   <img
                     class="img-fluid"
-                    src="/assets/blog/criancas-rurais.jpg"
+                    src="/assets/blog/menino-violao.jpg"
                     alt=""
                     width="100%"
                   />

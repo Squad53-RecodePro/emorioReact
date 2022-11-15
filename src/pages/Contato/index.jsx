@@ -32,8 +32,6 @@ const Contato = () => {
               <div class="col-lg-8">
                 <form
                   class="form-contact contact_form"
-                  action="contact_process.php"
-                  method="post"
                   id="contactForm"
                   novalidate="novalidate"
                 >
@@ -93,10 +91,7 @@ const Contato = () => {
                     </div>
                   </div>
                   <div class="form-group mt-3">
-                    <button
-                      type="submit"
-                      class="button button-contactForm btn_1"
-                    >
+                    <button class="button button-contactForm btn_1">
                       Enviar Mensagem
                     </button>
                   </div>
